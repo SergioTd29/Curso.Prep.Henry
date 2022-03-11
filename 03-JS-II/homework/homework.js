@@ -109,7 +109,7 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   var entero=Math.trunc(numero)
-  //var partedecimal=numero-entero
+  
   if(entero===numero){
     return true
   }else if(numero===0){
@@ -155,10 +155,10 @@ function operadoresLogicos(num1, num2, num3) {
   else if(num1 < 0 || num2 < 0 || num3 < 0){
     return "Son Negativos";
   }
-  else if(num1 > num2 && num1 > num3 && num1 > 0){
+   if(num1 > num2 && num1 > num3 && num1 > 0){
     return "El numero 1 es mayor y postivo";
   }
-  else if(num3>num1 && num3>num2){
+   if(num3>num1 && num3>num2){
     return num3 + 1;
   }
   else return false;
